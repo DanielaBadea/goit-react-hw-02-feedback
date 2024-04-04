@@ -1,0 +1,11 @@
+.stat-title {
+  margin-top: 30px;
+}
+.stat-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  margin-top: 8px;
+}
