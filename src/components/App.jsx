@@ -13,7 +13,7 @@ export class App extends Component{
       bad: 0
     }
   }
-  hendleFeedback = (evt)=> {
+  handleFeedback = (evt)=> {
     console.log('Clicked button:', evt.target);
     console.log('Button name:', evt.target.name);
     const {name} = evt.target; 
@@ -27,13 +27,14 @@ export class App extends Component{
       return(
         <>
         <Section title="Please leave feedback">
-        <FeedbackOptions options={options} onLeaveFeedback={this.hendleFeedback}/>
+        <FeedbackOptions options={options} onLeaveFeedback={this.handleFeedback}/>
           {
-            total > 0 ? (<Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={`${percentage}%`}/>)
+            total > 0
+             ? 
+             (<Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={`${percentage}%`}/>)
             :
               (<Notification message="There is no feedback"></Notification>)
           }
-        
         </Section>
         </>
       )

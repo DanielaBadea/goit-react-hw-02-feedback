@@ -6,7 +6,7 @@ function Statistics ({good, neutral, bad, total, positivePercentage}){
         <div className={styles['stat-container']}> 
             <h3 className={styles['stat-title']}>Statistics</h3>
             <ul className={styles['stat-items']}>
-                <li className={styles.item }>{`Good: ${good}`}</li>
+                <li className={styles.item}>{`Good: ${good}`}</li>
                 <li className={styles.item}>{`Neutral: ${neutral}`}</li>
                 <li className={styles.item}>{`Bad: ${bad}`}</li>
                 <li className={styles.item}>{`Total: ${total}`}</li>
